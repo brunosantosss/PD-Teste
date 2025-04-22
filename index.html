@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./src/main.css">
+        <link rel="stylesheet" href="./dist/output.css">
+
+        <script src="./src/script.js"></script>
+        
+        <title>Prontuário de Saúde</title>
+    </head>
+    <body>
+        <main class="w-screen flex flex-col items-center">
+            <!-- Page one -->
+            <section id="page-one" class="form-page flex flex-col items-center gap-7 p-5">
+                <div class="w-full flex justify-center items-center gap-6">
+                    <img src="./assets/logo_prefeitura.png" alt="Logo prefeitura" width="70">
+                    <h1 class="text-[32px] font-semibold text-[#323238]">Prontuário Dermatológico</h1>
+                </div>
+
+                <div class="flex gap-5">
+                    <div class="flex items-center gap-2">
+                        <p class="activate bg-[#3B5BBC] px-3 py-1 rounded-[50%] text-white text-[12px] font-semibold">1</p>
+                        <p class="text-[14px]">Dados do paciente</p>
+                        <img src="./assets/seta_direita.png" alt="Icone" width="10">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <p class="activate bg-[#E1E1E6] px-2.5 py-1 rounded-[50%] text-[#8D8D99] text-[12px] font-semibold">2</p>
+                        <p class="text-[14px]">AV Geral de saúde</p>
+                        <img src="./assets/seta_direita.png" alt="Icone" width="10">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <p class="activate bg-[#E1E1E6] px-2.5 py-1 rounded-[50%] text-[#8D8D99] text-[12px] font-semibold">3</p>
+                        <p class="text-[14px]">AV Geral de lesões</p>
+                    </div>
+                </div>
+
+                <form class="w-screen flex flex-col items-center px-7 py-5">
+                    <div class="w-[900px] flex flex-col gap-5 border border-[#E1E1E6] px-7 py-5">
+                        <div class="w-full flex gap-10">
+                            <div class="w-[500px] flex flex-col gap-5">
+                                <div class="flex flex-col gap-1">
+                                    <label for="" class="text-[14px] font-semibold text-[#323238]">Nome completo do paciente:</label>
+                                    <input class="w-full border border-[#E1E1E6] px-3 py-1.5 rounded-md text-[14px]" type="text" placeholder="Insira aqui...">
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <label for="" class="text-[14px] font-semibold text-[#323238]">Data de nascimento:</label>
+                                    <input class="w-full border border-[#E1E1E6] px-3 py-1.5 rounded-md text-[14px]" type="date">
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <label for="" class="text-[14px] font-semibold text-[#323238]">Sexo:</label>
+                                    <select class="w-full border border-[#E1E1E6] px-3 py-1.5 rounded-md text-[14px]" name="" id="">
+                                        <option value="">Masculino</option>
+                                        <option value="">Feminino</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="w-[500px] flex flex-col gap-5">
+                                <div class="flex flex-col gap-1">
+                                    <label for="" class="text-[14px] font-semibold text-[#323238]">Profissão:</label>
+                                    <input class="w-full border border-[#E1E1E6] px-3 py-1.5 rounded-md text-[14px]" type="text" placeholder="Insira aqui...">
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <label for="" class="text-[14px] font-semibold text-[#323238]">Endereço:</label>
+                                    <input class="w-full border border-[#E1E1E6] px-3 py-1.5 rounded-md text-[14px]" type="text" placeholder="Insira aqui...">
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <label for="" class="text-[14px] font-semibold text-[#323238]">Data da busca ativa:</label>
+                                    <input class="w-full border border-[#E1E1E6] px-3 py-1.5 rounded-md text-[14px]" type="date">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end w-full">
+                            <button class="next-btn bg-[#3B5BBC] px-7 py-2 text-white rounded-md uppercase font-semibold text-[14px]">Continuar</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Page two -->
+            <section id="page-two" class="form-page hidden flex flex-col items-center gap-7 p-5">
+                <div class="w-full flex justify-center items-center gap-6">
+                    <img src="./assets/logo_prefeitura.png" alt="Logo prefeitura" width="70">
+                    <h1 class="text-[32px] font-semibold text-[#323238]">Prontuário Dermatológico</h1>
+                </div>
+
+                <div class="flex gap-5">
+                    <div class="flex items-center gap-2">
+                        <div class="activate bg-[#1D8841] p-1.5 rounded-[50%] text-[#8D8D99] text-[12px] font-semibold">
+                            <img src="./assets/finalizado.png" alt="Finalizado" width="15">
+                        </div>
+                        <p class="text-[14px]">Dados do paciente</p>
+                        <img src="./assets/seta_direita.png" alt="Icone" width="10">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <p class="activate bg-[#3B5BBC] px-2.5 py-1 rounded-[50%] text-white text-[12px] font-semibold">2</p>
+                        <p class="text-[14px]">AV Geral de saúde</p>
+                        <img src="./assets/seta_direita.png" alt="Icone" width="10">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <p class="activate bg-[#E1E1E6] px-2.5 py-1 rounded-[50%] text-[#8D8D99] text-[12px] font-semibold">3</p>
+                        <p class="text-[14px]">AV Geral de lesões</p>
+                    </div>
+                </div>
+
+                <form class="w-screen flex flex-col items-center px-7 py-5">
+                    <div class="w-[900px] flex flex-col gap-5 border border-[#E1E1E6] px-7 py-5">
+                        <div class="w-full flex justify-center gap-10">
+                            <div class="w-[500px] flex flex-col gap-5">
+                                <div class="flex flex-col gap-1">
+                                    <label for="" class="text-[14px] font-semibold text-[#323238]">Doenças e antecedentes:</label>
+                                    <select class="w-full border border-[#E1E1E6] px-3 py-1.5 rounded-md text-[14px]" name="" id="">
+                                        <option value="">Alcoolismo</option>
+                                        <option value="">Hipertenção</option>
+                                        <option value="">Tabagismo</option>
+                                        <option value="">Doenças vasculares</option>
+                                        <option value="">Diabetes</option>
+                                        <option value="">Outros</option>
+                                    </select>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <label for="" class="text-[14px] font-semibold text-[#323238]">Mobilidade:</label>
+                                    <select class="w-full border border-[#E1E1E6] px-3 py-1.5 rounded-md text-[14px]" name="" id="">
+                                        <option value="">Deambula</option>
+                                        <option value="">Deambula com auxilio</option>
+                                        <option value="">Acamado parcial</option>
+                                        <option value="">Acamado total</option>
+                                    </select>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <label for="" class="text-[14px] font-semibold text-[#323238]">Ingesta:</label>
+                                    <select class="w-full border border-[#E1E1E6] px-3 py-1.5 rounded-md text-[14px]" name="" id="">
+                                        <option value="">Muito pobre</option>
+                                        <option value="">Pobre</option>
+                                        <option value="">Boa</option>
+                                        <option value="">Excelente</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-full flex justify-between">
+                            <button class="prev-btn border border-[#3B5BBC] px-7 py-2 text-[#3B5BBC] rounded-md uppercase font-semibold text-[14px]">Voltar</button>
+                            <button class="next-btn bg-[#3B5BBC] px-7 py-2 text-white rounded-md uppercase font-semibold text-[14px]">Concluir</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Page three -->
+            <section id="page-three" class="form-page hidden flex flex-col items-center gap-7 p-5">
+                <div class="w-full flex justify-center items-center gap-6">
+                    <img src="./assets/logo_prefeitura.png" alt="Logo prefeitura" width="70">
+                    <h1 class="text-[32px] font-semibold text-[#323238]">Prontuário Dermatológico</h1>
+                </div>
+
+                <div class="flex gap-5">
+                    <div class="flex items-center gap-2">
+                        <div class="activate bg-[#1D8841] p-1.5 rounded-[50%] text-[#8D8D99] text-[12px] font-semibold">
+                            <img src="./assets/finalizado.png" alt="Finalizado" width="15">
+                        </div>
+                        <p class="text-[14px]">Dados do paciente</p>
+                        <img src="./assets/seta_direita.png" alt="Icone" width="10">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <p class="activate bg-[#3B5BBC] px-2.5 py-1 rounded-[50%] text-white text-[12px] font-semibold">2</p>
+                        <p class="text-[14px]">AV Geral de saúde</p>
+                        <img src="./assets/seta_direita.png" alt="Icone" width="10">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <p class="activate bg-[#E1E1E6] px-2.5 py-1 rounded-[50%] text-[#8D8D99] text-[12px] font-semibold">3</p>
+                        <p class="text-[14px]">AV Geral de lesões</p>
+                    </div>
+                </div>
+
+                <div class="w-screen flex flex-col items-center px-7 py-5">
+                    <div class="w-[900px] flex flex-col items-center gap-5 border border-[#E1E1E6] px-7 py-5">
+                        <div id="lesao-container" class="relative inline-block">
+                            <img id="lesao-img" src="./assets/local_lesao1.png" alt="Local Lesão" width="350">
+                        </div>
+
+                        <div class="w-full flex justify-between">
+                            <button class="prev-btn border border-[#3B5BBC] px-7 py-2 text-[#3B5BBC] rounded-md uppercase font-semibold text-[14px]">Voltar</button>
+                            <button class="next-btn bg-[#3B5BBC] px-7 py-2 text-white rounded-md uppercase font-semibold text-[14px]">Continuar 1/2</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Page four -->
+            <section id="page-four" class="form-page hidden flex flex-col items-center gap-7 p-5">
+                <div class="w-full flex justify-center items-center gap-6">
+                    <img src="./assets/logo_prefeitura.png" alt="Logo prefeitura" width="70">
+                    <h1 class="text-[32px] font-semibold text-[#323238]">Prontuário Dermatológico</h1>
+                </div>
+
+                <div class="flex gap-5">
+                    <div class="flex items-center gap-2">
+                        <div class="activate bg-[#1D8841] p-1.5 rounded-[50%] text-[#8D8D99] text-[12px] font-semibold">
+                            <img src="./assets/finalizado.png" alt="Finalizado" width="15">
+                        </div>
+                        <p class="text-[14px]">Dados do paciente</p>
+                        <img src="./assets/seta_direita.png" alt="Icone" width="10">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="activate bg-[#1D8841] p-1.5 rounded-[50%] text-[#8D8D99] text-[12px] font-semibold">
+                            <img src="./assets/finalizado.png" alt="Finalizado" width="15">
+                        </div>
+                        <p class="text-[14px]">AV Geral de saúde</p>
+                        <img src="./assets/seta_direita.png" alt="Icone" width="10">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <p class="activate bg-[#3B5BBC] px-2.5 py-1 rounded-[50%] text-white text-[12px] font-semibold">3</p>
+                        <p class="text-[14px]">AV Geral de lesões</p>
+                    </div>
+                </div>
+
+                <form class="w-screen flex flex-col items-center px-7 py-5">
+                    <div class="w-[900px] flex flex-col gap-5 border border-[#E1E1E6] px-7 py-5">
+                        <div class="w-full flex gap-10">
+                            <div class="w-[500px] flex flex-col gap-5">
+                                <div class="flex flex-col gap-1">
+                                    <label for="" class="text-[14px] font-semibold text-[#323238]">Cor:</label>
+                                    <select class="w-full border border-[#E1E1E6] px-3 py-1.5 rounded-md text-[14px]" name="" id="">
+                                        <option value="">Rosa/Vermelho</option>
+                                        <option value="">Amarela</option>
+                                        <option value="">Cinza/Branca</option>
+                                        <option value="">Preto/Marrom</option>
+                                    </select>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <label for="" class="text-[14px] font-semibold text-[#323238]">Odor:</label>
+                                    <select class="w-full border border-[#E1E1E6] px-3 py-1.5 rounded-md text-[14px]" name="" id="">
+                                        <option value="">Ausente</option>
+                                        <option value="">Discreto</option>
+                                        <option value="">Moderado</option>
+                                        <option value="">Forte</option>
+                                    </select>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <label for="" class="text-[14px] font-semibold text-[#323238]">Secreção:</label>
+                                    <select class="w-full border border-[#E1E1E6] px-3 py-1.5 rounded-md text-[14px]" name="" id="">
+                                        <option value="">Rosa/Vermelha</option>
+                                        <option value="">Amarela/Verde</option>
+                                        <option value="">Ausente</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="w-[500px] flex flex-col gap-5">
+                                <div class="flex flex-col gap-1">
+                                    <label for="" class="text-[14px] font-semibold text-[#323238]">Dor:</label>
+                                    <select class="w-full border border-[#E1E1E6] px-3 py-1.5 rounded-md text-[14px]" name="" id="">
+                                        <option value="">Presença de dor</option>
+                                        <option value="">Ausência de dor</option>
+                                    </select>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <label for="" class="text-[14px] font-semibold text-[#323238]">Febre:</label>
+                                    <select class="w-full border border-[#E1E1E6] px-3 py-1.5 rounded-md text-[14px]" name="" id="">
+                                        <option value="">Sim</option>
+                                        <option value="">Não</option>
+                                    </select>
+                                </div>
+                                <div class="flex flex-col items-center gap-1 border border-dashed py-3">
+                                    <img class="w-[40px] bg-[#F4F6F8] rounded-md px-3 py-2" src="./assets/enviar_imagem.png" alt="Enviar imagem" width="40">
+                                    <p><span class="text-[#3B5BBC]">Clique aqui</span> para tirar foto da lesão</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end w-full justify-between">
+                            <button class="prev-btn border border-[#3B5BBC] px-7 py-2 text-[#3B5BBC] rounded-md uppercase font-semibold text-[14px]">Voltar</button>
+                            <button class="next-btn bg-[#3B5BBC] px-7 py-2 text-white rounded-md uppercase font-semibold text-[14px]">Continuar 2/2</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Page five -->
+            <section id="page-five" class="form-page hidden flex flex-col items-center gap-7 p-5">
+                <div class="w-full flex justify-center items-center gap-6">
+                    <img src="./assets/logo_prefeitura.png" alt="Logo prefeitura" width="70">
+                    <h1 class="text-[32px] font-semibold text-[#323238]">Prontuário Dermatológico</h1>
+                </div>
+
+                <div class="w-[900px] flex flex-col items-center mt-32 gap-7">
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="w-[120px] p-5 rounded-[50%] bg-[#1D8841]">
+                            <img src="./assets/finalizado.png" alt="" width="120">
+                        </div>
+                        <p class="text-[20px] font-semibold">Dados do prontuário foram salvos com sucesso.</p>
+                    </div>
+
+                    <button class="bg-[#1D8841] px-6 py-1 text-white font-medium rounded-md text-[18px]">Finalizar</button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
